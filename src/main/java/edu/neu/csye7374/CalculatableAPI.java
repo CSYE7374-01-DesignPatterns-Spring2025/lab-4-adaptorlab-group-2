@@ -1,8 +1,6 @@
 package edu.neu.csye7374;
 
-import java.util.List;
-
 public interface CalculatableAPI {
-    double accumulation(List<Double> itemPrices);
-    double payment(double payment);
+    public enum OPERATION{ADD, SUB, MULT, DIV};
+    public double operation(OPERATION op, double a, double b);
 }
